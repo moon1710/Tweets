@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // O "ES2015", "ES2017", etc. Asegúrate que sea ES6 o superior.
+    "module": "ES6", // O "commonjs", dependiendo de cómo sirvas los archivos.
+    "outDir": "./dist",   // O "outFile": "app.js" si prefieres un solo archivo.
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [ // <-- ¡ESTA ES LA LÍNEA IMPORTANTE!
+      "DOM",
+      "ES2015", // O "ES6". Esto incluye .find() y otras características.
+      "ScriptHost"
+    ]
+    // ... otras opciones que puedas tener
+  },
+  "include": [ // Asegúrate que esto apunte a tus archivos .ts
+    "*.ts"      // Si app.ts está en la raíz
+    // "src/**/*.ts" // Si app.ts está en una carpeta src
+  ]
+}

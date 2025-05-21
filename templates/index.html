@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwistSphere - Inicio</title>
+    <link rel="shortcut icon" href="../assets/bird.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">TwistSphere</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="about.html">Acerca de Nosotros</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <header class="page-header">
+            <h1>Bienvenido a TwistSphere</h1>
+            <p>Comparte tus ideas en pequeños "twists".</p>
+        </header>
+
+        <section class="new-twist-section">
+            <h2>Crear nuevo Twist</h2>
+            <form id="newTwistForm">
+                <textarea id="twistContent" placeholder="¿Qué está pasando?" rows="4" maxlength="280" required></textarea>
+                <div class="twist-form-footer">
+                    <span id="charCounter">280</span>
+                    <button type="submit" class="btn btn-primary">Twistear</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="twists-feed">
+            <h2>Feed de Twists</h2>
+            <div id="twistsContainer">
+                </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 TwistSphere. Diseñado por [Tu Nombre/Equipo].</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script> 
+</body>
+</html>

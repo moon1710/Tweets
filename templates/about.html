@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Nosotros - TwistSphere</title>
+  <link rel="shortcut icon" href="../assets/bird.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/about.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">TwistSphere</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html" class="active">Acerca de Nosotros</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container main-content">
+    <header class="page-header">
+      <h1>Acerca de Nosotros</h1>
+      <p>Somos un equipo apasionado por crear experiencias web innovadoras, concisas y dinámicas. TwistSphere es nuestro proyecto para explorar la comunicación del futuro.</p>
+    </header>
+
+    <section class="team-section">
+      <h2>Nuestro Equipo</h2>
+      <div class="team-grid">
+        <!-- Las tarjetas se generan dinámicamente -->
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 TwistSphere. Diseñado por [Tu Nombre/Equipo].</p>
+    </div>
+  </footer>
+
+  <script>
+    interface TeamMember {
+      photo: string;
+      name: string;
+      role: string;
+      bio: string;
+    }
+
+    const teamMembers: TeamMember[] = [
+      {
+        photo: 'https://via.placeholder.com/150/007BFF/FFFFFF?Text=Equipo1',
+        name: 'Ana Developer',
+        role: 'Lead Developer',
+        bio: 'Entusiasta de TypeScript y las arquitecturas limpias. Fanática del café.'
+      },
+      {
+        photo: 'https://via.placeholder.com/150/1ABC9C/FFFFFF?Text=Equipo2',
+        name: 'Luis Designer',
+        role: 'UI/UX Designer',
+        bio: 'Enfocado en crear interfaces intuitivas y estéticamente agradables. Amante del minimalismo.'
+      },
+      {
+        photo: 'https://via.placeholder.com/150/6F42C1/FFFFFF?Text=Equipo3',
+        name: 'Carlos C coder',
+        role: 'Frontend Specialist',
+        bio: 'Apasionado por CSS y las animaciones web. Siempre aprendiendo algo nuevo.'
+      }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector<HTMLDivElement>('.team-grid');
+      if (!grid) return;
+
+      teamMembers.forEach(member => {
+        const card = document.createElement('div');
+        card.className = 'team-member-card';
+        card.innerHTML = `
+          <img src="${member.photo}" alt="Foto de ${member.name}" class="team-member-photo">
+          <h3>${member.name}</h3>
+          <p class="member-role">${member.role}</p>
+          <p class="member-bio">${member.bio}</p>
+        `;
+        grid.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>
