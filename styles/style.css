@@ -127,7 +127,7 @@
   }
   #newTwistForm textarea {
     width: 100%;
-    background: #262643;
+    background: #333138;
     border: 1px solid #333;
     border-radius: var(--radius);
     padding: 1rem;
@@ -248,7 +248,7 @@
 
 .reply-form textarea {
   width: 100%;
-  background: #262643;
+  background: #333138;
   border: 1px solid #333;
   border-radius: var(--radius);
   padding: 0.75rem;

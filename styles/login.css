@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+
 /*──────────────────────────────────────────────────────
   VARIABLES GLOBALES
 ──────────────────────────────────────────────────────*/
@@ -14,7 +17,7 @@
     --shadow: 0 6px 18px rgba(0,0,0,0.6);
     --transition: 0.4s ease;
     --max-width: 400px;
-    --font-main: 'Segoe UI', 'Roboto', sans-serif;
+    --font-main: 'Quicksand';
   }
   
   /*──────────────────────────────────────────────────────
@@ -135,7 +138,7 @@
     padding: 0.75rem 1rem;
     border: 1px solid #333;
     border-radius: var(--radius);
-    background: #262643;
+    background: #333138;
     color: var(--text-primary);
     font-size: 1rem;
   }
