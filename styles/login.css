@@ -2,14 +2,14 @@
   VARIABLES GLOBALES
 ──────────────────────────────────────────────────────*/
 :root {
-    --bg-page: #0d0d21;
-    --bg-card: #1a1a33;
-    --bg-navbar: rgba(26, 26, 51, 0.8);
+    --bg-page: #1a1414;
+    --bg-card: #2a2022;;
+    --bg-navbar: rgba(41, 30, 30, 0.85);
     --text-primary: #e0e0f0;
     --text-secondary: #aaaaaa;
-    --accent: #8a2be2;       /* morado vibrante */
-    --accent-alt: #00d4ff;   /* turquesa */
-    --btn-hover: #7a24cc;
+    --accent: #c9a66b;
+    --accent-alt: #ad6262;
+    --btn-hover: #000;
     --radius: 0.75rem;
     --shadow: 0 6px 18px rgba(0,0,0,0.6);
     --transition: 0.4s ease;

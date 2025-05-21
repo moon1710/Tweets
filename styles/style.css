@@ -1,21 +1,21 @@
-/*──────────────────────────────────────────────────────
-  VARIABLES GLOBALES
-──────────────────────────────────────────────────────*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
-    --bg-page: #0d0d21;
-    --bg-card: #1a1a33;
-    --bg-navbar: rgba(26, 26, 51, 0.8);
-    --text-primary: #e0e0f0;
-    --text-secondary: #aaaaaa;
-    --accent: #8a2be2;       /* morado vibrante */
-    --accent-alt: #00d4ff;   /* turquesa */
-    --btn-hover: #7a24cc;
-    --radius: 0.75rem;
-    --shadow: 0 6px 18px rgba(0,0,0,0.6);
-    --transition: 0.4s ease;
-    --max-width: 1024px;
-    --font-main: 'Segoe UI', 'Roboto', sans-serif;
-  }
+
+  --bg-gradient: linear-gradient(135deg, #2d1a22, #5d4037);
+  --bg-page: #1a1414;
+  --bg-navbar: rgba(41, 30, 30, 0.85);
+  --bg-card: #2a2022;
+  --text-primary: #f5e9e2;
+  --text-secondary: #c0b3aa;
+  --accent: #c9a66b;
+  --accent-alt: #ad6262;
+  --radius: 0.5rem;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  --transition: 0.3s ease;
+  --max-width: 1200px;
+  --font-main: 'Quicksand';
+}
   
   /*──────────────────────────────────────────────────────
     RESET & GLOBAL
@@ -196,7 +196,117 @@
   .twist-card p {
     line-height: 1.5;
   }
+
+  .twist-avatar {
+    /* Tamaño fijo y forma circular */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    /* Degradado vibrante */
+    background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+    
+    /* Centrado del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Fuente y color */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    
+    /* Separación del contenido */
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    
+    /* Sombra suave para resaltar */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    
+    /* Animación de aparición */
+    animation: fadeIn 0.4s ease both;
+  }
   
+/* ──────────────────────────────────────────────────────
+   ESTILOS PARA EL FORMULARIO DE RESPUESTA
+────────────────────────────────────────────────────── */
+.reply-form-container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.4s ease both;
+}
+
+.reply-form textarea {
+  width: 100%;
+  background: #262643;
+  border: 1px solid #333;
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  resize: none;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.reply-form textarea:focus {
+  border-color: var(--accent-alt);
+  box-shadow: 0 0 6px rgba(0,212,255,0.5);
+  outline: none;
+}
+
+.reply-form .twist-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.reply-form .char-counter-reply {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.reply-form .btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  align-self: flex-end;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.reply-form .btn-sm:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
+/* ──────────────────────────────────────────────────────
+   INDENTACIÓN Y ESTILO DE LOS THREADS
+────────────────────────────────────────────────────── */
+.thread-container {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(255,255,255,0.1);
+}
+
+.reply-card {
+  margin-top: 1rem;
+}
+
+/* Asegúrate de que tu createTwistElement añada la clase .reply-card
+   al article cuando isReply sea true: <article class="twist-card reply-card"> */
+
+
   /*──────────────────────────────────────────────────────
     FOOTER
   ──────────────────────────────────────────────────────*/

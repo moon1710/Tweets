@@ -4,20 +4,33 @@
   VARIABLES GLOBALES
 ──────────────────────────────────────────────────────*/
 :root {
-    --bg-gradient: linear-gradient(135deg, #2c0263, #003973);
-    --bg-page: #0d0d21;
-    --bg-navbar: rgba(26, 26, 51, 0.8);
-    --bg-card: #1a1a33;
-    --text-primary: #e0e0f0;
-    --text-secondary: #aaaaaa;
-    --accent: #8a2be2;
-    --accent-alt: #00d4ff;
-    --radius: 0.75rem;
-    --shadow: 0 6px 18px rgba(0,0,0,0.6);
-    --transition: 0.4s ease;
-    --max-width: 1200px;
-    --font-main: 'Segoe UI', 'Roboto', sans-serif;
-  }
+  /* Gradiente elegante en tonos burdeos y dorado */
+  --bg-gradient: linear-gradient(135deg, #2d1a22, #5d4037);
+  
+  /* Fondo oscuro con un toque cálido */
+  --bg-page: #1a1414;
+  
+  /* Barra de navegación semitransparente y elegante */
+  --bg-navbar: rgba(41, 30, 30, 0.85);
+  
+  /* Tarjetas con un tono sutil más cálido */
+  --bg-card: #2a2022;
+  
+  /* Textos en tonos suaves y cálidos */
+  --text-primary: #f5e9e2;
+  --text-secondary: #c0b3aa;
+  
+  /* Acentos elegantes en dorado y un bordeaux sutil */
+  --accent: #c9a66b;
+  --accent-alt: #ad6262;
+  
+  /* Otros valores ajustados para un aspecto más refinado */
+  --radius: 0.5rem;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  --transition: 0.3s ease;
+  --max-width: 1200px;
+  --font-main: 'Montserrat', 'Georgia', serif;
+}
   
   /*──────────────────────────────────────────────────────
     RESET & GLOBAL
